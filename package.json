@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "babel-node ./bin/www"
+    "start": "nodemon bin/www --watch bin/ --watch routes/ --watch app.js --exec babel-node"
   },
   "dependencies": {
     "babel-cli": "^6.24.1",
@@ -16,6 +16,7 @@
     "express": "~4.15.2",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
+    "nodemon": "^1.11.0",
     "serve-favicon": "~2.4.2"
   }
 }
